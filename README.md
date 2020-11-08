@@ -1,10 +1,4 @@
-# ImpulseBomber.
-## Modern Denial-of-service ToolKit
-
-
-<p align="center">
-  <img src="https://i.ibb.co/rFct6QX/LOGO.png">
-</p>
+## ImpulseBomber. Modern Denial-of-service ToolKit.
 
 # Main window.
 <p align="center">
