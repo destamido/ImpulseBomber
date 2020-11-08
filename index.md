@@ -1,37 +1,52 @@
-## Welcome to GitHub Pages
+# ImpulseBomber. Modern Denial-of-service ToolKit.
 
-You can use the [editor on GitHub](https://github.com/damiolka/ImpulseBomber/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Main window:
+<p align="center">
+  <img src="https://i.imgur.com/Eu0dMdP.png">
+</p>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Methods:
+| Method               |   Target   | Description |
+| ---------------------| -----------|-------------|
+| SMS                  | PHONE     | Sends a massive amount of SMS messages and calls to a single target |
+| EMAIL                | EMAIL     | Sends a massive amount of Email messages to a target |
+| NTP                  | IP:PORT    | NTP amplification is a type of Distributed Denial of Service (DDoS) attack in which the attacker exploits publically-accessible Network Time Protocol (NTP) servers to overwhelm the targeted with User Datagram Protocol (UDP) traffic. |
+| SYN                  | IP:PORT    | A SYN flood (half-open attack) is a type of denial-of-service (DDoS) attack which aims to make a server unavailable to legitimate traffic by consuming all available server resources. |
+| UDP                  | IP:PORT    | A UDP flood is a type of denial-of-service attack in which a large number of User Datagram Protocol (UDP) packets are sent to a targeted server with the aim of overwhelming that device’s ability to process and respond. The firewall protecting the targeted server can also become exhausted as a result of UDP flooding, resulting in a denial-of-service to legitimate traffic. |
+| POD (Ping of Death)  | IP         | Ping of Death (a.k.a. PoD) is a type of Denial of Service (DoS) attack in which an attacker attempts to crash, destabilize, or freeze the targeted computer or service by sending malformed or oversized packets using a simple ping command. |
+| ICMP                 | IP:PORT    | Ping flood, also known as ICMP flood, is a common Denial of Service (DoS) attack in which an attacker takes down a victim's computer by overwhelming it with ICMP echo requests, also known as pings. |
+| HTTP                 | URL        | HTTP Flood is a type of Distributed Denial of Service (DDoS) attack in which the attacker manipulates HTTP and POST unwanted requests in order to attack a web server or application. These attacks often use interconnected computers that have been taken over with the aid of malware such as Trojan Horses. |
+| Slowloris            | IP:PORT    | Slowloris is a denial-of-service attack program which allows an attacker to overwhelm a targeted server by opening and maintaining many simultaneous HTTP connections between the attacker and the target. |
+| Memcached            | IP:PORT    | A memcached distributed denial-of-service (DDoS) attack is a type of cyber attack in which an attacker attempts to overload a targeted victim with internet traffic. The attacker spoofs requests to a vulnerable UDP memcached* server, which then floods a targeted victim with internet traffic, potentially overwhelming the victim’s resources. While the target’s internet infrastructure is overloaded, new requests cannot be processed and regular traffic is unable to access the internet resource, resulting in denial-of-service. |
 
-### Markdown
+## Installation:
+* Windows:
+  * Download Python 3.8 from [here](https://www.python.org/downloads/release/python-38).
+  * Launch installer, click `add python to PATH`.
+  * Download Impulse.
+  * Open cmd or powershell in Impulse directory.
+  * Run this command: `pip install -r requirements.txt`.
+  * And this: `python impulse.py --help`.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+* Linux:
+  * `sudo apt update`.
+  * `sudo apt install python3 python3-pip git -y`.
+  * `git clone https://github.com/damiolka/ImpulseBomber`.
+  * `cd Impulse/`.
+  * `pip3 install -r requirements.txt`.
+  * `python3 impulse.py --help`.
 
-```markdown
-Syntax highlighted code block
+* Termux:
+  * `pkg update`.
+  * `pkg install python3 python3-pip git -y`.
+  * `git clone https://github.com/damiolka/ImpulseBomber`.
+  * `cd Impulse/`.
+  * `pip3 install -r requirements.txt`.
+  * `python3 impulse.py --help`.
 
-# Header 1
-## Header 2
-### Header 3
+## Example SMS & Call flood:
+```python3 impulse.py --method SMS --time 20 --threads 15 --target +79771234567```
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/damiolka/ImpulseBomber/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<p align="center">
+  <img src="https://i.imgur.com/ZpPAJyD.png">
+</p>
