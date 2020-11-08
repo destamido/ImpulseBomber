@@ -45,7 +45,7 @@
   * `python3 impulse.py --help`.
 
 ## Example SMS & Call flood:
-```python3 impulse.py --method SMS --time 20 --threads 15 --target +79771234567```
+```python impulse.py --method SMS --time 20 --threads 15 --target +79771234567```
 
 <p align="center">
   <img src="https://i.imgur.com/ZpPAJyD.png">
