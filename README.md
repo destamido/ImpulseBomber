@@ -12,21 +12,22 @@
 | EMAIL                | EMAIL     | Отправляет большое количество сообщений электронной почты адресату |
 | NTP                  | IP:PORT    | Усиление NTP — это тип распределенной атаки типа отказ в обслуживании (DDoS), при которой злоумышленник использует общедоступные серверы протокола сетевого времени (NTP), чтобы перегрузить целевой трафик с помощью протокола пользовательских дейтаграмм (UDP). |
 | SYN                  | IP:PORT    | SYN-флуд (полуоткрытая атака) — это тип атаки типа «отказ в обслуживании» (DDoS), цель которой — сделать сервер недоступным для легитимного трафика, потребляя все доступные ресурсы сервера. |
-| UDP                  | IP:PORT    | A UDP flood is a type of denial-of-service attack in which a large number of User Datagram Protocol (UDP) packets are sent to a targeted server with the aim of overwhelming that device’s ability to process and respond. The firewall protecting the targeted server can also become exhausted as a result of UDP flooding, resulting in a denial-of-service to legitimate traffic. |
-| POD (Ping of Death)  | IP         | Ping of Death (a.k.a. PoD) is a type of Denial of Service (DoS) attack in which an attacker attempts to crash, destabilize, or freeze the targeted computer or service by sending malformed or oversized packets using a simple ping command. |
-| ICMP                 | IP:PORT    | Ping flood, also known as ICMP flood, is a common Denial of Service (DoS) attack in which an attacker takes down a victim's computer by overwhelming it with ICMP echo requests, also known as pings. |
-| HTTP                 | URL        | HTTP Flood is a type of Distributed Denial of Service (DDoS) attack in which the attacker manipulates HTTP and POST unwanted requests in order to attack a web server or application. These attacks often use interconnected computers that have been taken over with the aid of malware such as Trojan Horses. |
-| Slowloris            | IP:PORT    | Slowloris is a denial-of-service attack program which allows an attacker to overwhelm a targeted server by opening and maintaining many simultaneous HTTP connections between the attacker and the target. |
-| Memcached            | IP:PORT    | A memcached distributed denial-of-service (DDoS) attack is a type of cyber attack in which an attacker attempts to overload a targeted victim with internet traffic. The attacker spoofs requests to a vulnerable UDP memcached* server, which then floods a targeted victim with internet traffic, potentially overwhelming the victim’s resources. While the target’s internet infrastructure is overloaded, new requests cannot be processed and regular traffic is unable to access the internet resource, resulting in denial-of-service. |
+| UDP                  | IP:PORT    | UDP-лавинная рассылка — это тип атаки типа «отказ в обслуживании», при которой большое количество пакетов протокола пользовательских дейтаграмм (UDP) отправляется на целевой сервер с целью подавить способность этого устройства обрабатывать и отвечать. Брандмауэр, защищающий целевой сервер, также может выйти из строя в результате лавинной рассылки UDP, что приведет к отказу в обслуживании легитимного трафика. |
+| POD (Ping of Death)  | IP         | Ping of Death (также известный как PoD) — это тип атаки типа отказ в обслуживании (DoS), при которой злоумышленник пытается вывести из строя, дестабилизировать или заморозить целевой компьютер или службу, отправив неверно сформированные или слишком большие пакеты с помощью простой команды ping. |
+| ICMP                 | IP:PORT    | Ping-флуд, также известный как ICMP-флуд, представляет собой распространенную атаку типа отказа в обслуживании (DoS), при которой злоумышленник выключает компьютер жертвы, подавляя его эхо-запросами ICMP, также известными как эхо-запросы. |
+| HTTP                 | URL        | HTTP Flood — это тип распределенного отказа в обслуживании (DDoS), при котором злоумышленник манипулирует нежелательными запросами HTTP и POST, чтобы атаковать веб-сервер или приложение. В этих атаках часто используются взаимосвязанные компьютеры, которые были захвачены с помощью вредоносных программ, таких как троянские кони. |
+| Slowloris            | IP:PORT    | Slowloris — это программа атаки типа «отказ в обслуживании», которая позволяет злоумышленнику перегрузить целевой сервер, открывая и поддерживая множество одновременных HTTP-соединений между злоумышленником и целью. |
+| Memcached            | IP:PORT    | Распределенная атака типа «отказ в обслуживании» (DDoS) memcached — это тип кибератаки, при которой злоумышленник пытается перегрузить целевую жертву интернет-трафиком. Злоумышленник подделывает запросы к уязвимому UDP-серверу memcached*, который затем наводняет целевую жертву интернет-трафиком, потенциально перегружая ресурсы жертвы. В то время как интернет-инфраструктура цели перегружена, новые запросы не могут быть обработаны, а обычный трафик не может получить доступ к интернет-ресурсу, что приводит к отказу в обслуживании. |
 
 ## Установка:
 * Windows:
-  * Загрузить Python 3.8 [отсюда](https://www.python.org/downloads/release/python-38).
-  * Запустить установщик, нажать `add python to PATH`.
-  * Загрузить 'Impulse Bomber'.
-  * Открыть 'cmd' или 'powershell' в директории 'Impulse'.
-  * Запустить эту команду: `pip install -r requirements.txt`.
-  * После чего, эту: `python impulse.py --help`.
+  * Загрузить Python 3.8 отсюда — [ссылка](https://www.python.org/downloads/release/python-38).
+  * Запустить установщик, нажать "add python to PATH".
+  * Загрузить Impulse.
+  * Открыть командную строку (cmd) или Powershell в директории Impulse.
+  * Запустить команду: `pip install -r requirements.txt`.
+  * Потом эту: `python impulse.py --help`.
+
 
 * Linux:
   * `sudo apt update`.
@@ -35,6 +36,7 @@
   * `cd Impulse/`.
   * `pip3 install -r requirements.txt`.
   * `python3 impulse.py --help`.
+
 
 * Termux:
   * `pkg update`.
