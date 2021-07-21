@@ -1,11 +1,11 @@
-# ImpulseBomber. Современный набор инструментов для DoS.
+# ImpulseBomber — современный набор инструментов для DDoS.
 
 ## Главное окно:
 <p align="center">
   <img src="https://i.imgur.com/Eu0dMdP.png">
 </p>
 
-## Methods:
+## Методы:
 | Метод               |   Цель   | Описание |
 | ---------------------| -----------|-------------|
 | SMS                  | PHONE     | Отправляет огромное количество SMS-сообщений и звонков одной цели |
@@ -19,14 +19,14 @@
 | Slowloris            | IP:PORT    | Slowloris is a denial-of-service attack program which allows an attacker to overwhelm a targeted server by opening and maintaining many simultaneous HTTP connections between the attacker and the target. |
 | Memcached            | IP:PORT    | A memcached distributed denial-of-service (DDoS) attack is a type of cyber attack in which an attacker attempts to overload a targeted victim with internet traffic. The attacker spoofs requests to a vulnerable UDP memcached* server, which then floods a targeted victim with internet traffic, potentially overwhelming the victim’s resources. While the target’s internet infrastructure is overloaded, new requests cannot be processed and regular traffic is unable to access the internet resource, resulting in denial-of-service. |
 
-## Installation:
+## Установка:
 * Windows:
-  * Download Python 3.8 from [here](https://www.python.org/downloads/release/python-38).
-  * Launch installer, click `add python to PATH`.
-  * Download Impulse.
-  * Open cmd or powershell in Impulse directory.
-  * Run this command: `pip install -r requirements.txt`.
-  * And this: `python impulse.py --help`.
+  * Загрузить Python 3.8 [отсюда](https://www.python.org/downloads/release/python-38).
+  * Запустить установщик, нажать `add python to PATH`.
+  * Загрузить 'Impulse Bomber'.
+  * Открыть 'cmd' или 'powershell' в директории 'Impulse'.
+  * Запустить эту команду: `pip install -r requirements.txt`.
+  * После чего, эту: `python impulse.py --help`.
 
 * Linux:
   * `sudo apt update`.
@@ -44,11 +44,11 @@
   * `pip3 install -r requirements.txt`.
   * `python3 impulse.py --help`.
 
-## Example SMS & Call flood:
+## Пример флуда SMS и звонками:
 ```python impulse.py --method SMS --time 20 --threads 15 --target +79771234567```
 
 <p align="center">
   <img src="https://i.imgur.com/ZpPAJyD.png">
 </p>
 
-Created by destamido (ex. damiolka).
+Создано destamido (ex. damiolka).
