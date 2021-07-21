@@ -47,8 +47,8 @@
   * `python3 impulse.py --help`.
 
 * Возможные проблемы:
-  * a) Проблема: "MESSAGE: Failed import some modules. ERROR: No module named 'wget'".
-  * b) Решение: Введите команду `pip3 install wget`.
+  * 1. Проблема: "MESSAGE: Failed import some modules. ERROR: No module named 'wget'".
+  * 1.1. Решение: введите команду `pip3 install wget`.
 
 ## Пример флуда SMS и звонками:
 ```python impulse.py --method SMS --time 20 --threads 15 --target +79771234567```
