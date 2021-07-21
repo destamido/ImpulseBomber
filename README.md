@@ -22,17 +22,17 @@
 ## Установка:
 * Windows:
   * Загрузить Python 3.8 отсюда — [ссылка](https://www.python.org/downloads/release/python-38).
-  * Запустить установщик, нажать "add python to PATH".
-  * Загрузить Impulse.
-  * Открыть командную строку (cmd) или Powershell в директории Impulse.
+  * Запустить установщик, выбрать "add python to PATH".
+  * Загрузить репозиторий Impulse.
+  * Открыть командную строку (cmd) или Powershell в директории репозитория Impulse.
   * Запустить команду: `pip install -r requirements.txt`.
-  * Потом эту: `python impulse.py --help`.
+  * Затем команду: `python impulse.py --help`.
 
 
 * Linux:
   * `sudo apt update`.
   * `sudo apt install python3 python3-pip git -y`.
-  * `git clone https://github.com/damiolka/ImpulseBomber`.
+  * `git clone https://github.com/destamido/ImpulseBomber`.
   * `cd Impulse/`.
   * `pip3 install -r requirements.txt`.
   * `python3 impulse.py --help`.
@@ -41,7 +41,7 @@
 * Termux:
   * `pkg update`.
   * `pkg install python3 python3-pip git -y`.
-  * `git clone https://github.com/damiolka/ImpulseBomber`.
+  * `git clone https://github.com/destamido/ImpulseBomber`.
   * `cd Impulse/`.
   * `pip3 install -r requirements.txt`.
   * `python3 impulse.py --help`.
