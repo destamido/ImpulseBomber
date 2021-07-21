@@ -23,7 +23,7 @@
 * Windows:
   * Загрузить Python 3.8 отсюда — [ссылка](https://www.python.org/downloads/release/python-38).
   * Запустить установщик, выбрать "add python to PATH".
-  * Загрузить [репозиторий](https://github.com/destamido/ImpulseBomber/archive/refs/heads/main.zip) Impulse.
+  * Загрузить репозиторий Impulse — [ссылка](https://github.com/destamido/ImpulseBomber/archive/refs/heads/main.zip).
   * Открыть командную строку (cmd) или Powershell в директории репозитория Impulse.
   * Запустить команду: `pip install -r requirements.txt`.
   * Затем команду: `python impulse.py --help`.
