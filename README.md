@@ -1,17 +1,17 @@
-# ImpulseBomber. Modern Denial-of-service ToolKit.
+# ImpulseBomber. Современный набор инструментов для DoS.
 
-## Main window:
+## Главное окно:
 <p align="center">
   <img src="https://i.imgur.com/Eu0dMdP.png">
 </p>
 
 ## Methods:
-| Method               |   Target   | Description |
+| Метод               |   Цель   | Описание |
 | ---------------------| -----------|-------------|
-| SMS                  | PHONE     | Sends a massive amount of SMS messages and calls to a single target |
-| EMAIL                | EMAIL     | Sends a massive amount of Email messages to a target |
-| NTP                  | IP:PORT    | NTP amplification is a type of Distributed Denial of Service (DDoS) attack in which the attacker exploits publically-accessible Network Time Protocol (NTP) servers to overwhelm the targeted with User Datagram Protocol (UDP) traffic. |
-| SYN                  | IP:PORT    | A SYN flood (half-open attack) is a type of denial-of-service (DDoS) attack which aims to make a server unavailable to legitimate traffic by consuming all available server resources. |
+| SMS                  | PHONE     | Отправляет огромное количество SMS-сообщений и звонков одной цели |
+| EMAIL                | EMAIL     | Отправляет большое количество сообщений электронной почты адресату |
+| NTP                  | IP:PORT    | Усиление NTP — это тип распределенной атаки типа отказ в обслуживании (DDoS), при которой злоумышленник использует общедоступные серверы протокола сетевого времени (NTP), чтобы перегрузить целевой трафик с помощью протокола пользовательских дейтаграмм (UDP). |
+| SYN                  | IP:PORT    | SYN-флуд (полуоткрытая атака) — это тип атаки типа «отказ в обслуживании» (DDoS), цель которой — сделать сервер недоступным для легитимного трафика, потребляя все доступные ресурсы сервера. |
 | UDP                  | IP:PORT    | A UDP flood is a type of denial-of-service attack in which a large number of User Datagram Protocol (UDP) packets are sent to a targeted server with the aim of overwhelming that device’s ability to process and respond. The firewall protecting the targeted server can also become exhausted as a result of UDP flooding, resulting in a denial-of-service to legitimate traffic. |
 | POD (Ping of Death)  | IP         | Ping of Death (a.k.a. PoD) is a type of Denial of Service (DoS) attack in which an attacker attempts to crash, destabilize, or freeze the targeted computer or service by sending malformed or oversized packets using a simple ping command. |
 | ICMP                 | IP:PORT    | Ping flood, also known as ICMP flood, is a common Denial of Service (DoS) attack in which an attacker takes down a victim's computer by overwhelming it with ICMP echo requests, also known as pings. |
