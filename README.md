@@ -50,3 +50,5 @@
 <p align="center">
   <img src="https://i.imgur.com/ZpPAJyD.png">
 </p>
+
+Created by destamido (ex. damiolka).
